@@ -116,4 +116,31 @@ img {
       text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7);
     }
   }
+
+  .content {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding: 20px;
+
+    .binary {
+      text-align: center;
+      width: 100%;
+
+      h1 {
+        padding: 0;
+        margin: 0;
+      }
+    }
+
+    .paragraph {
+      text-align: left;
+      width: 100%;
+
+      h1 {
+        font-size: 40px;
+      }
+    }
+  }
 }
