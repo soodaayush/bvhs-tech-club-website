@@ -9,10 +9,11 @@
     <meta name="author" content="Aayush Sood" />
     <link rel="stylesheet" type="text/css" href="css/styles.css" />
     <title>Bay View High Tech Club</title>
-  </head>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r134/three.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/vanta/dist/vanta.birds.min.js"></script>
   <body>
     <div class="container">
-      <div class="banner">
+      <div class="banner" id="banner">
         <h1>Bay View High Tech Club</h1>
       </div>
       <div class="content">
@@ -137,5 +138,8 @@
         </div>
       </div>
     </div>
+    <script>
+      VANTA.BIRDS("#banner");
+    </script>
   </body>
 </html>
