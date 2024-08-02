@@ -40,13 +40,14 @@ img {
     justify-content: center;
     align-items: center;
     width: 100%;
-    // background: url("../images/technology.jpg");
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position: center;
-    overflow: hidden;
     height: 400px;
     color: #fff;
+
+    .binary-number {
+      -webkit-touch-callout: none;
+      -webkit-user-select: text;
+      user-select: text;
+    }
 
     h1 {
       font-size: 50px;
