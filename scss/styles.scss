@@ -89,6 +89,12 @@ img {
     .paragraph {
       text-align: justify;
 
+      .img-caption {
+        margin-top: 10px;
+        font-size: 14px;
+        color: #b4b0d8;
+      }
+
       h1 {
         font-size: 40px;
       }
@@ -101,6 +107,10 @@ img {
           opacity: 0.5;
         }
       }
+    }
+
+    .footer {
+      margin-top: 20px;
     }
   }
 }
