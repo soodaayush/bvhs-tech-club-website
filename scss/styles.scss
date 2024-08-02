@@ -79,6 +79,14 @@ img {
       h1 {
         font-size: 40px;
       }
+
+      a {
+        transition: 0.15s ease-in-out;
+
+        &:hover {
+          opacity: 0.5;
+        }
+      }
     }
   }
 }
