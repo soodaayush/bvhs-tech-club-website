@@ -50,6 +50,16 @@ img {
   display: block;
 }
 
+@keyframes MoveUpDown {
+  0%,
+  100% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-20px);
+  }
+}
+
 .container {
   display: flex;
   justify-content: center;
@@ -59,15 +69,19 @@ img {
   .arrow {
     position: fixed;
     top: 50%;
-    right: 0;
     transform: translateY(-50%);
     opacity: 0.75;
-    width: 40px;
-    height: 40px;
+    width: 30px;
     background-color: transparent;
     z-index: 1;
-    margin-right: 10px;
     cursor: pointer;
+    transition: 0.15s ease-in-out;
+    filter: drop-shadow(4px 4px 8px rgba(0, 0, 0, 0.3));
+    animation: MoveUpDown 1s linear infinite;
+
+    &:hover {
+      opacity: 0.5;
+    }
   }
 
   .banner {
@@ -113,14 +127,15 @@ img {
 
       .button-container {
         position: relative;
-        width: 220px;
+        width: 260px;
 
         button {
           padding: 10px;
           border-radius: 10px;
           background: #2fdbb6;
           transition: 0.15s ease-in-out;
-          font-size: 34px;
+          font-size: 22px;
+          text-align: center;
 
           &:hover {
             background: #1da88a;
