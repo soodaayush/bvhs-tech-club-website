@@ -35,6 +35,7 @@
     <link rel="icon" type="image/x-icon" href="images/favicon/favicon.ico" />
     <link rel="shortcut icon" href="images/favicon/favicon.ico" />
     <link rel="manifest" href="/site.webmanifest" />
+    <script src="https://cdn.jsdelivr.net/npm/@tsparticles/confetti@3.0.3/tsparticles.confetti.bundle.min.js"></script>
   </head>
   <body id="container">
     <div id="vantabg"></div>
@@ -166,7 +167,7 @@
           </p>
         </div>
         <div class="paragraph">
-          <h1>CODE</h1>
+          <h1 id="code">CODE</h1>
           <p>
             Piecing the letters together forms the word 'CODE'. This
             demonstrates how words can be represented in binary, allowing your
@@ -204,6 +205,17 @@
       </div>
     </div>
     <script>
+      // const code = document.getElementById("code");
+
+      // if (code) {
+      //   code.addEventListener("click", (event) => {
+      //     console.log("Button clicked!", event);
+      //     triggerConfetti(event);
+      //   });
+      // } else {
+      //   console.error('Element with ID "code" not found.');
+      // }
+
       VANTA.BIRDS({
         el: "#vantabg",
         backgroundColor: 0x7192f,
@@ -216,6 +228,76 @@
         scaleMobile: 1.0,
         separation: 100.0,
       });
+
+      // const count = 200;
+
+      // const defaults = {
+      //   origin: { y: 0.5 },
+      // };
+
+      // function fire(particleRatio, opts) {
+      //   confetti(
+      //     Object.assign({}, opts, {
+      //       particleCount: Math.floor(count * particleRatio),
+      //     })
+      //   );
+      // }
+
+      // function triggerConfetti(event, button) {
+      //   if (!event) return;
+
+      //   const rect = code.getBoundingClientRect();
+      //   console.log(rect);
+      //   // const x = rect.left + document.documentElement.scrollLeft;
+      //   // const y = rect.top + document.documentElement.scrollTop;
+
+      //   const x = rect.x;
+      //   const y = rect.y;
+
+      //   console.log(x, y);
+
+      //   // const x = rect.x + globalThis.scrollX;
+      //   // const y = rect.y + globalThis.scrollY;
+
+      //   // const x = code.x;
+
+      //   fire(0.25, {
+      //     origin: { x, y },
+      //     spread: 26,
+      //     startVelocity: 55,
+      //   });
+
+      //   fire(0.2, {
+      //     origin: { x, y },
+      //     spread: 60,
+      //   });
+
+      //   fire(0.35, {
+      //     origin: { x, y },
+      //     spread: 100,
+      //     decay: 0.91,
+      //     scalar: 0.8,
+      //   });
+
+      //   fire(0.1, {
+      //     origin: { x, y },
+      //     spread: 120,
+      //     startVelocity: 25,
+      //     decay: 0.92,
+      //     scalar: 1.2,
+      //   });
+
+      //   fire(0.1, {
+      //     origin: { x, y },
+      //     spread: 120,
+      //     startVelocity: 45,
+      //   });
+
+      //   // confetti({
+      //   //   particleCount: 150,
+      //   //   spread: 60,
+      //   // });
+      // }
     </script>
   </body>
 </html>
