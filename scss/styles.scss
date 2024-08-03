@@ -26,6 +26,12 @@ body {
   background-color: #06192f;
 }
 
+button {
+  font-family: "JetBrains Mono", sans-serif;
+  cursor: pointer;
+  border: none;
+}
+
 #vantabg {
   position: fixed;
   top: 0;
@@ -54,7 +60,6 @@ img {
     justify-content: center;
     align-items: center;
     width: 100%;
-    height: 200px;
     color: #fff;
 
     .binary-number {
@@ -90,6 +95,35 @@ img {
     .paragraph {
       text-align: justify;
 
+      .button-container {
+        position: relative;
+        width: 220px;
+
+        button {
+          padding: 10px;
+          border-radius: 10px;
+          background: #2fdbb6;
+          transition: 0.15s ease-in-out;
+          font-size: 34px;
+
+          &:hover {
+            background: #1da88a;
+          }
+        }
+      }
+
+      .code {
+        display: none;
+      }
+
+      .button-container canvas {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        pointer-events: none;
+      }
+
       .img-caption {
         margin-top: 10px;
         font-size: 14px;
@@ -122,6 +156,10 @@ img {
     justify-content: center;
     align-items: center;
     flex-direction: column;
+
+    h1 {
+      text-align: center;
+    }
   }
 }
 
