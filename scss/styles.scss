@@ -127,7 +127,7 @@ img {
 
       .button-container {
         position: relative;
-        width: 260px;
+        width: 275px;
 
         button {
           padding: 10px;
@@ -136,6 +136,8 @@ img {
           transition: 0.15s ease-in-out;
           font-size: 22px;
           text-align: center;
+          text-decoration: none;
+          color: black;
 
           &:hover {
             background: #1da88a;
@@ -204,6 +206,20 @@ img {
     .ASCII {
       height: 300px;
       width: 300px;
+    }
+  }
+}
+
+@media screen and (max-width: 360px) {
+  .paragraph {
+    .binary-img {
+      height: 150px;
+      width: 220px;
+    }
+
+    .ASCII {
+      height: 200px;
+      width: 200px;
     }
   }
 }
