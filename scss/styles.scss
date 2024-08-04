@@ -14,14 +14,10 @@ html {
   line-height: 1.6;
   font-size: 16px;
   font-family: "JetBrains Mono", sans-serif;
-  height: 100%;
-  width: 100%;
 }
 
 body {
   margin: 0;
-  min-height: 100vh;
-  width: 100%;
   color: #fff;
   background-color: #06192f;
   overflow-x: hidden;
@@ -33,6 +29,14 @@ button {
   border: none;
 }
 
+a {
+  text-decoration: none;
+}
+
+img {
+  display: block;
+}
+
 #vantabg {
   position: fixed;
   top: 0;
@@ -42,45 +46,46 @@ button {
   z-index: -1;
 }
 
-a {
-  text-decoration: none;
-}
-
-img {
-  display: block;
-}
-
-@keyframes MoveUpDown {
-  0%,
-  100% {
-    transform: translateY(0);
-  }
-  50% {
-    transform: translateY(-20px);
-  }
-}
-
 .container {
   display: flex;
   justify-content: center;
   align-items: center;
   flex-direction: column;
+  padding: 20px;
 
-  .arrow {
-    position: fixed;
-    top: 50%;
-    transform: translateY(-50%);
-    opacity: 0.75;
-    width: 30px;
-    background-color: transparent;
-    z-index: 1;
-    cursor: pointer;
-    transition: 0.15s ease-in-out;
-    filter: drop-shadow(4px 4px 8px rgba(0, 0, 0, 0.3));
-    animation: MoveUpDown 1s linear infinite;
+  .learn {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin-top: 20px;
+    width: 100%;
+    text-align: center;
 
-    &:hover {
-      opacity: 0.5;
+    label {
+      margin-bottom: 30px;
+    }
+
+    .arrow {
+      opacity: 0.75;
+      width: 40px;
+      cursor: pointer;
+      transition: 0.15s ease-in-out;
+      animation: MoveUpDown 1s linear infinite;
+
+      @keyframes MoveUpDown {
+        0%,
+        100% {
+          transform: translateY(0);
+        }
+        50% {
+          transform: translateY(-20px);
+        }
+      }
+
+      &:hover {
+        opacity: 0.5;
+      }
     }
   }
 
@@ -90,18 +95,38 @@ img {
     align-items: center;
     width: 100%;
     color: #fff;
-    padding: 20px;
-
-    .binary-number {
-      -webkit-touch-callout: none;
-      -webkit-user-select: text;
-      user-select: text;
-    }
 
     h1 {
       font-size: 50px;
       text-align: center;
       text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7);
+    }
+  }
+
+  .info {
+    display: flex;
+    justify-content: center;
+    align-items: start;
+    flex-direction: column;
+    background: #3a4f63;
+    padding: 20px;
+    text-align: left;
+
+    h1 {
+      margin: 0;
+    }
+
+    p {
+      margin-bottom: 5px;
+    }
+
+    a {
+      transition: 0.15s ease-in-out;
+      color: #a4f600;
+
+      &:hover {
+        opacity: 0.5;
+      }
     }
   }
 
@@ -116,52 +141,17 @@ img {
       text-align: center;
       width: 100%;
 
-      h1 {
+      .binary-number {
+        -webkit-touch-callout: none;
+        -webkit-user-select: text;
+        user-select: text;
         padding: 0;
         margin: 0;
       }
     }
 
-    .info {
-      background: #3a4f63;
-      padding: 20px;
-
-      h1 {
-        margin: 0;
-      }
-
-      a {
-        transition: 0.15s ease-in-out;
-        color: #a4f600;
-
-        &:hover {
-          opacity: 0.5;
-        }
-      }
-    }
-
     .paragraph {
       text-align: justify;
-
-      .button-container {
-        position: relative;
-        width: 275px;
-
-        button {
-          padding: 10px;
-          border-radius: 10px;
-          background: #2fdbb6;
-          transition: 0.15s ease-in-out;
-          font-size: 22px;
-          text-align: center;
-          text-decoration: none;
-          color: black;
-
-          &:hover {
-            background: #1da88a;
-          }
-        }
-      }
 
       .code {
         display: none;
@@ -183,6 +173,26 @@ img {
 
       h1 {
         font-size: 40px;
+      }
+
+      .button-container {
+        position: relative;
+        width: 275px;
+
+        button {
+          padding: 10px;
+          border-radius: 10px;
+          background: #2fdbb6;
+          transition: 0.15s ease-in-out;
+          font-size: 22px;
+          text-align: center;
+          text-decoration: none;
+          color: black;
+
+          &:hover {
+            background: #1da88a;
+          }
+        }
       }
     }
 
