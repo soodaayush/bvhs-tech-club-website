@@ -122,6 +122,24 @@ img {
       }
     }
 
+    .info {
+      background: #3a4f63;
+      padding: 20px;
+
+      h1 {
+        margin: 0;
+      }
+
+      a {
+        transition: 0.15s ease-in-out;
+        color: #a4f600;
+
+        &:hover {
+          opacity: 0.5;
+        }
+      }
+    }
+
     .paragraph {
       text-align: justify;
 
@@ -165,15 +183,6 @@ img {
 
       h1 {
         font-size: 40px;
-      }
-
-      a {
-        transition: 0.15s ease-in-out;
-        color: yellow;
-
-        &:hover {
-          opacity: 0.5;
-        }
       }
     }
 
