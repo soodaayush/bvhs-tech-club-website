@@ -2,7 +2,7 @@
 
 ## Inspiration
 
-Since I host Bay View High School's Tech Club, I thought it would be best to make a central website containing all of the information about it.
+Since I lead Bay View High School's Tech Club, I thought it would be best to make a central website containing all of the information about it.
 
 ## Challenges
 
