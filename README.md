@@ -14,4 +14,4 @@ I learned about certain animations that you can use to catch people's eyes.
 
 ## The Website
 
-This is the Bay View High School Tech Club website. In this website, you can learn more about our club, and the binary problem that was presented to students who have scanned a QR code that sends them to this website.
+This is the Bay View High School Tech Club website. In this website, you can learn more about our club, and the binary problem that was presented to students who have scanned a QR code that sends them to this page.
