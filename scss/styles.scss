@@ -203,6 +203,20 @@ img {
 
     .footer {
       margin-top: 20px;
+
+      a {
+        display: inline-block;
+
+        .social-media {
+          width: 50px;
+          transition: 0.15s ease-in-out;
+          cursor: pointer;
+
+          &:hover {
+            opacity: 0.5;
+          }
+        }
+      }
     }
   }
 }
