@@ -1,5 +1,7 @@
 # Bay View High Tech Club Website
 
+![BVHS Tech Club](https://github.com/user-attachments/assets/fc47ebca-e737-49eb-a7b1-5f770e5c4a3f)
+
 ## Inspiration
 
 Since I lead Bay View High School's Tech Club, I thought it would be best to make a central website containing all of the information about it.
