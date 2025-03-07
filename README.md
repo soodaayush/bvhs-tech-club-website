@@ -12,7 +12,7 @@ Designing an eye-catching easy-to-browse layout that is accessible on all device
 
 ## Lessons Learned
 
-I learned about certain animations that you can use to catch people's eyes.
+I learned about the Vanta.js library and leveraged its uses to create eye-catching animations in the background of the website.
 
 ## The Website
 
