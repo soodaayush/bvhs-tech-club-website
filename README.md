@@ -4,19 +4,19 @@
 
 ## Inspiration
 
-Since I lead Bay View High School's Tech Club, I thought it would be best to make a central website containing all of the information about it.
+As the club president, I wanted to create more than just another school webpage. This site is a hub for everything Tech Club, from who we are to the challenges we pose and the creativity we celebrate. It's a space where students can explore, learn, and get inspired.
 
 ## Challenges
 
-Designing an eye-catching easy-to-browse layout that is accessible on all devices, including mobile.
+Building a site that looks great on every screen, including phones, tablets, desktops, while still being fun and easy to navigate wasn't easy. The real challenge? Balancing design with performance and accessibility.
 
 ## Lessons Learned
 
-I learned about the Vanta.js library and leveraged its uses to create eye-catching animations in the background of the website.
+This project introduced me to the magic of Vanta.js, a library that lets you add interactive, animated backgrounds to your site. It helped take the design to the next level, sleek, techy, and just a bit playful.
 
 ## The Website
 
-This is the Bay View High School Tech Club website. In this website, you can learn more about our club, and the binary problem that was presented to students who have scanned a QR code that sends them to this page.
+Dive in and learn more about the Tech Club, what we do, how to join, and the binary puzzle that students unlock by scanning a mysterious QR code. 🧩
 
 ## Links
 
