@@ -53,6 +53,12 @@ img {
   flex-direction: column;
   padding: 20px;
 
+  .title {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
   .learn {
     display: flex;
     justify-content: center;
@@ -225,6 +231,36 @@ img {
         }
       }
     }
+  }
+}
+
+@media screen and (max-width: 975px) {
+  .title {
+    flex-direction: column;
+  }
+
+  .logo {
+    height: 100px;
+    width: 175px;
+  }
+
+  .titleText {
+    padding-top: 10px;
+  }
+}
+
+@media screen and (min-width: 975px) {
+  .title {
+    flex-direction: row;
+  }
+
+  .logo {
+    height: 50px;
+    width: 90px;
+  }
+
+  .titleText {
+    padding-left: 10px;
   }
 }
 
