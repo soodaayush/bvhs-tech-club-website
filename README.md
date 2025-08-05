@@ -16,7 +16,7 @@ This project introduced me to the magic of Vanta.js, a library that lets you add
 
 ## The Website
 
-Dive in and learn more about the Tech Club, what we do, how to join, and the binary puzzle that students unlock by scanning a mysterious QR code. 🧩
+Dive in and learn more about the Tech Club, what we do, how to join, and the binary puzzle that students unlock by scanning a mysterious QR code.
 
 ## Links
 
