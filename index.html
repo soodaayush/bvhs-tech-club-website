@@ -76,18 +76,26 @@
   </script>
   <body id="container">
     <div class="container">
+      <div class="header">
+        <div class="content">
+          <img class="logo" src="./images/logo.png" />
+          <a
+            href="https://classroom.google.com/c/NjY5ODY2MDY1MDQ5?cjc=lljme5c"
+            target="_blank"
+            >Join Us</a
+          >
+        </div>
+      </div>
       <div class="welcome">
         <div class="content">
           <div class="text">
-            <h1 class="title">
-              <img class="logo" src="./images/logo.png" />
-              Bay View High School Tech Club
-            </h1>
+            <h1 class="title">Bay View High School Tech Club</h1>
             <div class="subtitles">
               <i
                 >Exploring tech together, making it fun and accessible for
                 everyone in our school</i
               >
+              <br />
               <i>Meetings during Wednesday lunch @ Room 2071 </i>
             </div>
           </div>
@@ -104,7 +112,7 @@
             technology. We support school events, build cool projects, and run
             hands-on workshops to help everyone learn and innovate.
           </p>
-          <div class="stats">
+          <div class="stats fade-in">
             <div class="stat">
               <img class="icon" src="./images/people.svg" />
               <h1 class="number">20+</h1>
@@ -126,20 +134,23 @@
       <div class="paragraph">
         <div class="content">
           <h1>What we Do</h1>
-          <div class="stats">
+          <div class="stats fade-in">
             <div class="stat activity">
+              <img class="icon" src="./images/event-support.svg" />
               <h3>Event Tech Support</h3>
               <p class="description">
                 Soundboards, lighting, and A/V setup for school events.
               </p>
             </div>
             <div class="stat activity">
+              <img class="icon" src="./images/technical-workshops.svg" />
               <h3>Technical Workshops</h3>
               <p class="description">
                 Learn technology with fun and interactive sessions.
               </p>
             </div>
             <div class="stat activity">
+              <img class="icon" src="./images/collaboration.svg" />
               <h3>Collaboration with Other Clubs</h3>
               <p class="description">
                 Assisting various clubs with their technical needs.
@@ -150,8 +161,47 @@
       </div>
       <div class="paragraph">
         <div class="content">
+          <h1>Club in Action</h1>
+          <div class="photos fade-in">
+            <div class="photo">
+              <img
+                src="./images/photo-gallery/lockheed-martin-group-picture.jpg"
+              />
+              <div class="overlay">
+                <h3>Lockheed Martin CYBERQUEST Competition 2025</h3>
+                <p>Secured 3rd Place</p>
+              </div>
+            </div>
+            <div class="photo">
+              <img
+                src="./images/photo-gallery/youth-ai-pitch-competition-group-picture.jpg"
+              />
+              <div class="overlay">
+                <h3>AI Atlantic Summit Youth AI Pitch Competition 2025</h3>
+                <p>Secured 2rd Place + $500 prize</p>
+              </div>
+            </div>
+            <div class="photo">
+              <img src="./images/photo-gallery/tech-club-meeting.jpg" />
+              <div class="overlay">
+                <h3>End of Semester Meeting</h3>
+                <p>Conducted fun technical games</p>
+              </div>
+            </div>
+            <div class="photo">
+              <img src="./images/photo-gallery/hamilton-night.jpeg" />
+              <div class="overlay">
+                <h3>Hamilton Night</h3>
+                <p>Tech Club's first ever musical night</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="paragraph">
+        <div class="content">
           <h1>Executive Team</h1>
-          <div class="info">
+          <div class="info fade-in">
             <p><strong>President:</strong> Aayush Sood</p>
             <p><strong>Vice President:</strong> Jaxson Hynes</p>
             <p><strong>Communications Executive:</strong> Yahya Amer</p>
@@ -167,7 +217,7 @@
       <div class="paragraph">
         <div class="content">
           <h1>FAQ</h1>
-          <div class="info">
+          <div class="info fade-in">
             <p>
               <strong>Google Classroom Code:</strong>
               <a
@@ -223,42 +273,17 @@
         </div>
       </div>
     </div>
-    <!-- <script>
-      const revealBtn = document.getElementById("revealBtn");
-      const codeText = document.getElementById("code");
+    <script>
+      const fadeElements = document.querySelectorAll(".fade-in");
 
-      revealBtn.addEventListener("click", () => {
-        let canvas = document.createElement("canvas");
-        canvas.width = 600;
-        canvas.height = 600;
-        let container = document.getElementsByClassName("button-container")[0];
-        container.appendChild(canvas);
-
-        let confettiButton = confetti.create(canvas);
-        confettiButton({
-          particleCount: 200,
-          spread: 300,
-          startVelocity: 15,
-          scalar: 0.9,
-          ticks: 90,
-        }).then(() => container.removeChild(canvas));
-
-        revealBtn.style.display = "none";
-        codeText.style.display = "block";
+      window.addEventListener("scroll", () => {
+        fadeElements.forEach((el) => {
+          const rect = el.getBoundingClientRect();
+          if (rect.top < window.innerHeight - 100) {
+            el.classList.add("visible");
+          }
+        });
       });
-
-      VANTA.BIRDS({
-        el: "#vantabg",
-        backgroundColor: 0x7192f,
-        color1: 0xff0000,
-        color2: 0xd1ff,
-        birdSize: 1.0,
-        quantity: 1.0,
-        scale: 1.0,
-        speedLimit: 2.0,
-        scaleMobile: 1.0,
-        separation: 100.0,
-      });
-    </script> -->
+    </script>
   </body>
 </html>
