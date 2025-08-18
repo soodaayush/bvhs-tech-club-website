@@ -284,6 +284,18 @@
           }
         });
       });
+
+      // Only run on devices that don’t support hover
+      if (window.matchMedia("(hover: none)").matches) {
+        const cards = document.querySelectorAll(".photo");
+
+        cards.forEach((card) => {
+          card.addEventListener("click", () => {
+            const overlay = card.querySelector(".overlay");
+            overlay.classList.toggle("visible"); // toggle overlay visibility
+          });
+        });
+      }
     </script>
   </body>
 </html>
