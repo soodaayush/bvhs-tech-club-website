@@ -100,7 +100,7 @@ h1 {
     backdrop-filter: blur(5px);
     -webkit-backdrop-filter: blur(5px);
     border-bottom: 1px solid #202534;
-    z-index: 1;
+    z-index: 2;
 
     .header-title {
       display: flex;
@@ -295,7 +295,7 @@ h1 {
   .faq-question {
     width: 100%;
     padding: 15px;
-    background-color: #510d15; /* Tech Club accent color */
+    background-color: #510d15;
     color: white;
     font-size: 1rem;
     text-align: left;
@@ -305,10 +305,11 @@ h1 {
     align-items: center;
     outline: none;
     cursor: pointer;
+    gap: 30px;
     transition: background-color 0.3s ease;
 
     .icon {
-      width: 35px;
+      width: 25px;
       height: 25px;
     }
   }
@@ -635,23 +636,12 @@ h1 {
   .welcome {
     .content {
       flex-direction: column;
+      width: 100%;
     }
 
     .title {
       font-size: 18px;
     }
-  }
-}
-
-@media screen and (max-width: 1000px) {
-  .content {
-    width: 100%;
-  }
-}
-
-@media screen and (min-width: 1000px) {
-  .content {
-    width: 90%;
   }
 }
 
@@ -676,7 +666,28 @@ h1 {
   }
 }
 
-@media (max-width: 650px) {
+@media (max-width: 400px) {
+  .header-title {
+    font-size: 10px;
+  }
+
+  .logo {
+    height: 15px;
+    width: 25px;
+  }
+
+  .links {
+    a {
+      font-size: 10px;
+    }
+
+    .social-media {
+      width: 20px;
+    }
+  }
+}
+
+@media (min-width: 400px) {
   .header-title {
     font-size: 15px;
   }
@@ -698,6 +709,10 @@ h1 {
 }
 
 @media (min-width: 650px) {
+  .header-title {
+    font-size: 22px;
+  }
+
   .links {
     a {
       font-size: 22px;

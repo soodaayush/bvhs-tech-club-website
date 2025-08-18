@@ -37,7 +37,7 @@
     <link rel="stylesheet" type="text/css" href="css/styles.css" />
     <title>BVHS Tech Club</title>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r134/three.min.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/vanta/dist/vanta.birds.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/vanta/dist/vanta.cells.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/canvas-confetti@1.9.3/dist/confetti.browser.min.js"></script>
     <link
       rel="apple-touch-icon"
@@ -79,7 +79,11 @@
       <div class="header">
         <div class="content">
           <h2 class="header-title">
-            <img class="logo" src="./images/logo.png" />
+            <img
+              class="logo"
+              src="./images/logo.png"
+              alt="Bay View High School Tech Club Logo"
+            />
             Bay View High School
           </h2>
           <div class="links">
@@ -102,7 +106,7 @@
           </div>
         </div>
       </div>
-      <div class="welcome">
+      <div class="welcome" id="welcome">
         <div class="content">
           <div class="text">
             <h1 class="title">Bay View High School Tech Club</h1>
@@ -116,7 +120,7 @@
             </div>
           </div>
           <div class="image">
-            <img src="./images/IMG_1167.JPG" />
+            <img src="./images/IMG_1167.JPG" alt="Tech Club team" />
           </div>
         </div>
       </div>
@@ -130,17 +134,21 @@
           </p>
           <div class="stats fade-in">
             <div class="stat">
-              <img class="icon" src="./images/people.svg" />
+              <img class="icon" src="./images/people.svg" alt="Members" />
               <h1 class="number">20+</h1>
               <p class="description">Active Members</p>
             </div>
             <div class="stat">
-              <img class="icon" src="./images/event.svg" />
+              <img class="icon" src="./images/event.svg" alt="Events" />
               <h1 class="number">35+</h1>
               <p class="description">Events supported annually</p>
             </div>
             <div class="stat">
-              <img class="icon" src="./images/competition.svg" />
+              <img
+                class="icon"
+                src="./images/competition.svg"
+                alt="Competitions"
+              />
               <h1 class="number">2</h1>
               <p class="description">Competitions attended</p>
             </div>
@@ -152,21 +160,33 @@
           <h1>What we Do</h1>
           <div class="stats fade-in">
             <div class="stat activity">
-              <img class="icon" src="./images/event-support.svg" />
+              <img
+                class="icon"
+                src="./images/event-support.svg"
+                alt="Event Support"
+              />
               <h3 class="number">Event Tech Support</h3>
               <p class="description">
                 Soundboards, lighting, and A/V setup for school events.
               </p>
             </div>
             <div class="stat activity">
-              <img class="icon" src="./images/technical-workshops.svg" />
+              <img
+                class="icon"
+                src="./images/technical-workshops.svg"
+                alt="Technical Workshops"
+              />
               <h3 class="number">Technical Workshops</h3>
               <p class="description">
                 Learn technology with fun and interactive sessions.
               </p>
             </div>
             <div class="stat activity">
-              <img class="icon" src="./images/collaboration.svg" />
+              <img
+                class="icon"
+                src="./images/collaboration.svg"
+                alt="Collaboration"
+              />
               <h3 class="number">Collaboration with Other Clubs</h3>
               <p class="description">
                 Assisting various clubs with their technical needs.
@@ -182,6 +202,7 @@
             <div class="photo">
               <img
                 src="./images/photo-gallery/lockheed-martin-group-picture.jpg"
+                alt="Bay View High Sharks Lockheed Martin CYBERQUEST 2025 Group Picture"
               />
               <div class="overlay">
                 <h3>Lockheed Martin CYBERQUEST Competition 2025</h3>
@@ -191,6 +212,7 @@
             <div class="photo">
               <img
                 src="./images/photo-gallery/youth-ai-pitch-competition-group-picture.jpg"
+                alt="Bay View High Sharks Youth AI Pitch Competition 2025 Group Picture"
               />
               <div class="overlay">
                 <h3>AI Atlantic Summit Youth AI Pitch Competition 2025</h3>
@@ -198,14 +220,20 @@
               </div>
             </div>
             <div class="photo">
-              <img src="./images/photo-gallery/tech-club-meeting.jpg" />
+              <img
+                src="./images/photo-gallery/tech-club-meeting.jpg"
+                alt="Tech Club Meeting"
+              />
               <div class="overlay">
                 <h3>End of Semester Meeting</h3>
                 <p>Conducted fun technical games</p>
               </div>
             </div>
             <div class="photo">
-              <img src="./images/photo-gallery/hamilton-night.jpeg" />
+              <img
+                src="./images/photo-gallery/hamilton-night.jpeg"
+                alt="Hamilton Night"
+              />
               <div class="overlay">
                 <h3>Hamilton Night</h3>
                 <p>Tech Club's first ever musical night</p>
@@ -268,7 +296,7 @@
             <div class="faq-item">
               <button class="faq-question">
                 What is Tech Club?
-                <img class="icon" src="./images/arrow.svg" />
+                <img class="icon" src="./images/arrow.svg" alt="Arrow" />
               </button>
               <div class="faq-answer">
                 <p>
@@ -282,7 +310,7 @@
             <div class="faq-item">
               <button class="faq-question">
                 When and where do Tech Club meetings occur?
-                <img class="icon" src="./images/arrow.svg" />
+                <img class="icon" src="./images/arrow.svg" alt="Arrow" />
               </button>
               <div class="faq-answer">
                 <p>
@@ -294,7 +322,7 @@
             <div class="faq-item">
               <button class="faq-question">
                 Who is Tech Club for?
-                <img class="icon" src="./images/arrow.svg" />
+                <img class="icon" src="./images/arrow.svg" alt="Arrow" />
               </button>
               <div class="faq-answer">
                 <p>
@@ -307,7 +335,7 @@
             <div class="faq-item">
               <button class="faq-question">
                 Can I join Tech Club in the middle of the year?
-                <img class="icon" src="./images/arrow.svg" />
+                <img class="icon" src="./images/arrow.svg" alt="Arrow" />
               </button>
               <div class="faq-answer">
                 <p>
@@ -320,7 +348,7 @@
             <div class="faq-item">
               <button class="faq-question">
                 What should I bring to a Tech Club meeting?
-                <img class="icon" src="./images/arrow.svg" />
+                <img class="icon" src="./images/arrow.svg" alt="Arrow" />
               </button>
               <div class="faq-answer">
                 <p>
@@ -333,7 +361,7 @@
             <div class="faq-item">
               <button class="faq-question">
                 How do I get involved with technical assistance during events?
-                <img class="icon" src="./images/arrow.svg" />
+                <img class="icon" src="./images/arrow.svg" alt="Arrow" />
               </button>
               <div class="faq-answer">
                 <p>
@@ -345,7 +373,7 @@
             <div class="faq-item">
               <button class="faq-question">
                 How can I request Tech Club support for my event?
-                <img class="icon" src="./images/arrow.svg" />
+                <img class="icon" src="./images/arrow.svg" alt="Arrow" />
               </button>
               <div class="faq-answer">
                 <p>
@@ -358,7 +386,7 @@
             <div class="faq-item">
               <button class="faq-question">
                 Who should I contact for questions?
-                <img class="icon" src="./images/arrow.svg" />
+                <img class="icon" src="./images/arrow.svg" alt="Arrow" />
               </button>
               <div class="faq-answer">
                 <p>
@@ -415,6 +443,20 @@
             answer.style.maxHeight = answer.scrollHeight + "px";
           }
         });
+      });
+
+      VANTA.CELLS({
+        el: ".welcome",
+        mouseControls: true,
+        touchControls: true,
+        gyroControls: false,
+        minHeight: 200.0,
+        minWidth: 200.0,
+        scale: 1.0,
+        color1: 0x510d15,
+        color2: 0x841522,
+        size: 1.0,
+        speed: 1.0,
       });
     </script>
   </body>
