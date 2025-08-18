@@ -91,6 +91,10 @@ h1 {
           margin-right: 10px;
         }
       }
+
+      .subtitles {
+        margin-top: 20px;
+      }
     }
 
     .image {
@@ -104,6 +108,12 @@ h1 {
       height: 100%;
       object-fit: cover;
     }
+  }
+
+  .icon {
+    height: 75px;
+    width: 75px;
+    fill: #fff;
   }
 
   .stats {
@@ -125,6 +135,10 @@ h1 {
       border-radius: 10px;
       text-align: center;
       box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+
+      .number {
+        margin: 0;
+      }
     }
   }
 
@@ -132,7 +146,7 @@ h1 {
     margin-top: 20px;
     padding: 20px;
     background: #510d15;
-    width: 50%;
+    width: 100%;
     box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
 
     a {
@@ -468,3 +482,41 @@ h1 {
 //     width: 80%;
 //   }
 // }
+
+@media (max-width: 1100px) {
+  .welcome {
+    .content {
+      flex-direction: column;
+    }
+  }
+}
+
+@media screen and (max-width: 1000px) {
+  .content {
+    width: 100%;
+  }
+}
+
+@media screen and (min-width: 1000px) {
+  .content {
+    width: 90%;
+  }
+}
+
+@media screen and (min-width: 1700px) {
+  .content {
+    width: 70%;
+  }
+}
+
+@media screen and (max-width: 1700px) {
+  .content {
+    width: 90%;
+  }
+}
+
+@media (max-width: 1250px) {
+  .title {
+    font-size: 18px;
+  }
+}
