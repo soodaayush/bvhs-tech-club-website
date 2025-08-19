@@ -1,7 +1,21 @@
 {
   "name": "Bay View High Tech Club",
-  "short_name": "Bay View High Tech Club",
+  "short_name": "BVHS Tech Club",
   "icons": [
+    {
+      "url": "images/favicon/favicon.ico",
+      "type": "image/x-icon"
+    },
+    {
+      "src": "images/favicon/favicon-16x16.png",
+      "sizes": "16x16",
+      "type": "image/png"
+    },
+    {
+      "src": "images/favicon/favicon-32x32.png",
+      "sizes": "32x32",
+      "type": "image/png"
+    },
     {
       "src": "images/favicon/android-chrome-192x192.png",
       "sizes": "192x192",
@@ -13,7 +27,7 @@
       "type": "image/png"
     }
   ],
-  "theme_color": "#06192f",
-  "background_color": "#06192f",
+  "theme_color": "#510d15",
+  "background_color": "#510d15",
   "display": "standalone"
 }
