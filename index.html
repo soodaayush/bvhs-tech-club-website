@@ -20,7 +20,7 @@
     />
     <meta
       property="og:image"
-      content="https://bvh-tech-club.netlify.app/images/website-banner.png"
+      content="https://bvh-tech-club.netlify.app/images/branding/website-banner.png"
     />
     <meta name="twitter:card" content="summary_large_image" />
     <meta property="twitter:domain" content="bvh-tech-club.netlify.app" />
@@ -32,13 +32,12 @@
     />
     <meta
       name="twitter:image"
-      content="https://bvh-tech-club.netlify.app/images/website-banner.png"
+      content="https://bvh-tech-club.netlify.app/images/branding/website-banner.png"
     />
     <link rel="stylesheet" type="text/css" href="css/styles.css" />
     <title>BVHS Tech Club</title>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r134/three.min.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/vanta/dist/vanta.birds.min.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/canvas-confetti@1.9.3/dist/confetti.browser.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/vanta/dist/vanta.cells.min.js"></script>
     <link
       rel="apple-touch-icon"
       sizes="180x180"
@@ -75,254 +74,391 @@
     gtag("config", "G-0JJW6Q67QP");
   </script>
   <body id="container">
-    <div id="vantabg"></div>
     <div class="container">
-      <div class="paragraph info" id="info">
-        <div class="title">
-          <img class="logo" src="./images/logo.png" />
-          <h1 class="titleText">Bay View High School Tech Club</h1>
+      <div class="header">
+        <div class="content">
+          <h2 class="header-title">
+            <img
+              class="logo"
+              src="./images/branding/logo.webp"
+              alt="Bay View High School Tech Club Logo"
+            />
+            Bay View High School
+          </h2>
+          <div class="links">
+            <a
+              href="https://classroom.google.com/c/NjY5ODY2MDY1MDQ5?cjc=lljme5c"
+              target="_blank"
+              >Join Us</a
+            >
+            <a
+              href="https://linktr.ee/bvhstechclub"
+              target="_blank"
+              title="BVHS Tech Club Instagram"
+            >
+              <img
+                class="social-media"
+                src="images/icons/linktree.svg"
+                alt="Linktree"
+              />
+            </a>
+          </div>
         </div>
-        <p>
-          <strong>Google Classroom Code:</strong>
-          <a
-            href="https://classroom.google.com/c/NjY5ODY2MDY1MDQ5?cjc=lljme5c"
-            target="_blank"
-          >
-            lljme5c</a
-          >
-        </p>
-        <p><strong>When:</strong> Every Wednesday during lunch</p>
-        <p><strong>Where:</strong> Room 2071</p>
-        <p>
-          <strong>What:</strong> A club that explores tech together, making it
-          fun and accessible for everyone at our school
-        </p>
-        <p>
-          <strong>Who Can Join:</strong> All students are welcome, regardless of
-          grade or experience level
-        </p>
-        <p>
-          <strong>What to Bring:</strong> Your curiosity, lunch, and a laptop if
-          you own one
-        </p>
-        <p>
-          <strong>Current Topic:</strong> Mobile Development, although Web
-          Development is being covered at the moment to prepare for it
-        </p>
-        <p>
-          <strong>Contact:</strong> For more information, email Aayush Sood at
-          <a href="mailto:sa825051@gnspes.ca">sa825051@gnspes.ca</a>
-        </p>
       </div>
-      <div class="learn paragraph">
-        <p>Click to learn</p>
-        <a href="#background" title="Click to see Tech Club details">
-          <img class="arrow" src="images/arrow.svg" alt="Arrow" />
-        </a>
+      <div class="welcome" id="welcome">
+        <div class="content">
+          <div class="text">
+            <h1 class="title">Bay View High School Tech Club</h1>
+            <div class="subtitles">
+              <i
+                >Exploring tech together, making it fun and accessible for
+                everyone in our school</i
+              >
+              <br />
+              <i>Meetings during Wednesday lunch @ Room 2071 </i>
+            </div>
+          </div>
+          <div class="image">
+            <img
+              src="./images/branding/group-picture.webp"
+              alt="Tech Club team"
+            />
+          </div>
+        </div>
       </div>
-      <div class="banner" id="banner">
-        <h1>The Problem</h1>
+      <div class="paragraph">
+        <div class="content">
+          <h1>About Us</h1>
+          <p>
+            The Bay View Tech Club is a community of students passionate about
+            technology. We support school events, build cool projects, and run
+            hands-on workshops to help everyone learn and innovate.
+          </p>
+          <div class="stats fade-in">
+            <div class="stat">
+              <img class="icon" src="./images/icons/people.svg" alt="Members" />
+              <h1 class="number">20+</h1>
+              <p class="description">Active Members</p>
+            </div>
+            <div class="stat">
+              <img class="icon" src="./images/icons/event.svg" alt="Events" />
+              <h1 class="number">35+</h1>
+              <p class="description">Events supported annually</p>
+            </div>
+            <div class="stat">
+              <img
+                class="icon"
+                src="./images/icons/competition.svg"
+                alt="Competitions"
+              />
+              <h1 class="number">2</h1>
+              <p class="description">Competitions attended</p>
+            </div>
+          </div>
+        </div>
       </div>
-      <div class="content">
-        <div class="binary">
-          <h1 class="binary-number">1000011</h1>
-          <h1 class="binary-number">1001111</h1>
-          <h1 class="binary-number">1000100</h1>
-          <h1 class="binary-number">1000101</h1>
-        </div>
-        <div class="paragraph" id="background">
-          <h1>Background</h1>
-          <p>
-            The sequence of 1's and 0's make up a binary number. Binary numbers
-            work by using each digit to represent a power of 2 (e.g. 2⁰, 2¹,
-            2²). For every digit that is 1, you add the corresponding powers of
-            2 together to produce an integer.
-          </p>
-          <img
-            src="images/binary-example.webp"
-            class="binary-img"
-            alt="Binary Example"
-          />
-          <div class="img-caption">
-            <p>Binary Example</p>
-            <p>Source: Aayush Sood</p>
-          </div>
-          <p>
-            In the example above, the 1's are placed at exponents 2⁶, 2³, and
-            2¹. These values correspond to the values 64, 8, and 2,
-            respectively, adding up to 74.
-          </p>
-          <p>
-            Any data can be represented with binary, including letters. Whenever
-            you type a letter on your keyboard, binary numbers are being sent to
-            the computer to display the letter. This happens because every
-            letter is associated with an ASCII (American Standard Code for
-            Information Interchange) value. These values are regular integers
-            (e.g. 20), which are easier for humans to read. The sum of 1's in a
-            binary number corresponds to the ASCII value of a letter. In the
-            example above, the ASCII value of 74 is associated with the letter:
-            'J'. An ASCII table contains all ASCII values and their
-            corresponding letters, providing a centralized reference.
-          </p>
-          <p>
-            Here is an example of an ASCII table (this does not include all
-            ASCII values):
-          </p>
-          <img src="images/ascii-table.webp" alt="ASCII Table" class="ASCII" />
-          <div class="img-caption">
-            <p>ASCII Table</p>
-            <p>Source: Sagar Sharma, Linux Handbook, linuxhandbook.com</p>
+      <div class="paragraph">
+        <div class="content">
+          <h1>What we Do</h1>
+          <div class="stats fade-in">
+            <div class="stat activity">
+              <img
+                class="icon"
+                src="./images/icons/event-support.svg"
+                alt="Event Support"
+              />
+              <h3 class="number">Event Tech Support</h3>
+              <p class="description">
+                Soundboards, lighting, and A/V setup for school events.
+              </p>
+            </div>
+            <div class="stat activity">
+              <img
+                class="icon"
+                src="./images/icons/technical-workshops.svg"
+                alt="Technical Workshops"
+              />
+              <h3 class="number">Technical Workshops</h3>
+              <p class="description">
+                Learn technology with fun and interactive sessions.
+              </p>
+            </div>
+            <div class="stat activity">
+              <img
+                class="icon"
+                src="./images/icons/collaboration.svg"
+                alt="Collaboration"
+              />
+              <h3 class="number">Collaboration with Other Clubs</h3>
+              <p class="description">
+                Assisting various clubs with their technical needs.
+              </p>
+            </div>
           </div>
         </div>
-        <div class="paragraph">
-          <h1>1000011</h1>
-          <p>Let's solve for this binary number:</p>
-          <img
-            src="images/'c'-binary.webp"
-            class="binary-img"
-            alt="'C' Binary"
-          />
-          <div class="img-caption">
-            <p>'C' Binary</p>
-            <p>Source: Aayush Sood</p>
+      </div>
+      <div class="paragraph">
+        <div class="content">
+          <h1>Club in Action</h1>
+          <div class="photos fade-in">
+            <div class="photo">
+              <img
+                src="./images/photo-gallery/lockheed-martin-group-picture.webp"
+                alt="Bay View High Sharks Lockheed Martin CYBERQUEST 2025 Group Picture"
+              />
+              <div class="overlay">
+                <h3>Lockheed Martin CYBERQUEST Competition 2025</h3>
+                <p>Secured 3rd Place</p>
+              </div>
+            </div>
+            <div class="photo">
+              <img
+                src="./images/photo-gallery/youth-ai-pitch-competition-group-picture.webp"
+                alt="Bay View High Sharks Youth AI Pitch Competition 2025 Group Picture"
+              />
+              <div class="overlay">
+                <h3>AI Atlantic Summit Youth AI Pitch Competition 2025</h3>
+                <p>Secured 2rd Place + $500 prize</p>
+              </div>
+            </div>
+            <div class="photo">
+              <img
+                src="./images/photo-gallery/tech-club-meeting.webp"
+                alt="Tech Club Meeting"
+              />
+              <div class="overlay">
+                <h3>End of Semester Meeting</h3>
+                <p>Conducted fun technical games</p>
+              </div>
+            </div>
+            <div class="photo">
+              <img
+                src="./images/photo-gallery/hamilton-night.webp"
+                alt="Hamilton Night"
+              />
+              <div class="overlay">
+                <h3>Hamilton Night</h3>
+                <p>Tech Club's first ever musical night</p>
+              </div>
+            </div>
           </div>
-          <p>
-            Adding the 1's values (64 + 2 + 1) together produces 67,
-            corresponding with an uppercase 'C'. This is our first letter.
-          </p>
         </div>
-        <div class="paragraph">
-          <h1>1001111</h1>
-          <p>Let's solve for this binary number:</p>
-          <img
-            src="images/'o'-binary.webp"
-            class="binary-img"
-            alt="'O' Binary"
-          />
-          <div class="img-caption">
-            <p>'O' Binary</p>
-            <p>Source: Aayush Sood</p>
+      </div>
+      <div class="paragraph">
+        <div class="content">
+          <h1>Executive Team</h1>
+          <div class="info fade-in">
+            <p>
+              <strong>President:</strong> Aayush Sood (<a
+                href="mailto:sa825051@gnspes.ca"
+                >sa825051@gnspes.ca</a
+              >)
+            </p>
+            <p>
+              <strong>Vice President:</strong> Jaxson Hynes (<a
+                href="mailto:hjm818668@gnspes.ca"
+                >hjm818668@gnspes.ca</a
+              >)
+            </p>
+            <p>
+              <strong>Communications Executive:</strong> Yahya Amer (<a
+                href="mailto:aym586488@gnspes.ca"
+                >aym586488@gnspes.ca</a
+              >)
+            </p>
+            <p>
+              <strong>Logistics Executive:</strong> Seth Farris (<a
+                href="mailto:fsd817108@gnspes.ca"
+                >fsd817108@gnspes.ca</a
+              >)
+            </p>
+            <p>
+              <strong>Secretary:</strong> Din Paunescu (<a
+                href="mailto:pd049529@gnspes.ca"
+                >pd049529@gnspes.ca</a
+              >)
+            </p>
+            <p>
+              <strong>Mentees:</strong> Noah Windover (<a
+                href="mailto:wnj958597@gnspes.ca"
+                >wnj958597@gnspes.ca</a
+              >), Yarden Vissman (<a href="mailto:vy989865@gnspes.ca"
+                >vy989865@gnspes.ca</a
+              >), Krtin Rathi (<a href="mailto:rk655788@gnspes.ca"
+                >rk655788@gnspes.ca</a
+              >)
+            </p>
           </div>
-          <p>
-            Adding the 1's values (64 + 8 + 4 + 2 + 1) together produces 79,
-            which corresponds with an uppercase 'O'. This is our second letter.
-          </p>
         </div>
-        <div class="paragraph">
-          <h1>1000100</h1>
-          <p>Let's solve for this binary number:</p>
-          <img
-            src="images/'d'-binary.webp"
-            class="binary-img"
-            alt="'D' Binary"
-          />
-          <div class="img-caption">
-            <p>'D' Binary</p>
-            <p>Source: Aayush Sood</p>
+      </div>
+      <div class="paragraph">
+        <div class="content">
+          <h1>FAQ</h1>
+          <div class="info fade-in">
+            <div class="faq-item">
+              <button class="faq-question">
+                What is Tech Club?
+                <img class="icon" src="./images/icons/arrow.svg" alt="Arrow" />
+              </button>
+              <div class="faq-answer">
+                <p>
+                  Tech Club is a student-run club where members explore
+                  technology, programming, and event support. We work on
+                  projects, learn new skills, and help make school events run
+                  smoothly.
+                </p>
+              </div>
+            </div>
+            <div class="faq-item">
+              <button class="faq-question">
+                When and where do Tech Club meetings occur?
+                <img class="icon" src="./images/icons/arrow.svg" alt="Arrow" />
+              </button>
+              <div class="faq-answer">
+                <p>
+                  Meetings are held every Wednesday during the lunch hour at
+                  Room 2071.
+                </p>
+              </div>
+            </div>
+            <div class="faq-item">
+              <button class="faq-question">
+                Who is Tech Club for?
+                <img class="icon" src="./images/icons/arrow.svg" alt="Arrow" />
+              </button>
+              <div class="faq-answer">
+                <p>
+                  Any student interested in technology, coding, robotics, or
+                  helping out with school event is welcome, no prior experienced
+                  required.
+                </p>
+              </div>
+            </div>
+            <div class="faq-item">
+              <button class="faq-question">
+                Can I join Tech Club in the middle of the year?
+                <img class="icon" src="./images/icons/arrow.svg" alt="Arrow" />
+              </button>
+              <div class="faq-answer">
+                <p>
+                  Yes! Tech Club welcomes new members at any time during the
+                  school year. Just come to a meeting and we'll help you get
+                  started!
+                </p>
+              </div>
+            </div>
+            <div class="faq-item">
+              <button class="faq-question">
+                What should I bring to a Tech Club meeting?
+                <img class="icon" src="./images/icons/arrow.svg" alt="Arrow" />
+              </button>
+              <div class="faq-answer">
+                <p>
+                  Bring your curiosity! For coding sessions, a laptop is useful
+                  but not required. For event setup, we provide the necessary
+                  equipment.
+                </p>
+              </div>
+            </div>
+            <div class="faq-item">
+              <button class="faq-question">
+                How do I get involved with technical assistance during events?
+                <img class="icon" src="./images/icons/arrow.svg" alt="Arrow" />
+              </button>
+              <div class="faq-answer">
+                <p>
+                  Be on the lookout for opportunities that will be posted in the
+                  Google Classroom regarding events!
+                </p>
+              </div>
+            </div>
+            <div class="faq-item">
+              <button class="faq-question">
+                How can I request Tech Club support for my event?
+                <img class="icon" src="./images/icons/arrow.svg" alt="Arrow" />
+              </button>
+              <div class="faq-answer">
+                <p>
+                  Please fill out the following Google Form and we will reach
+                  out to you! Please request Tech Club assistance at least one
+                  week before your event.
+                </p>
+              </div>
+            </div>
+            <div class="faq-item">
+              <button class="faq-question">
+                Who should I contact for questions?
+                <img class="icon" src="./images/icons/arrow.svg" alt="Arrow" />
+              </button>
+              <div class="faq-answer">
+                <p>
+                  Reach out to the President of Tech Club, Aayush Sood. Contact
+                  info is available on the Executive Team section of our
+                  website.
+                </p>
+              </div>
+            </div>
           </div>
-          <p>
-            Adding the 1's values (64 + 4) together produces 68, with it's
-            corresponding with an uppercase 'D'. This is our third letter. You
-            probably see where this is going.
-          </p>
         </div>
-        <div class="paragraph">
-          <h1>1000101</h1>
-          <p>Let's solve for this binary number:</p>
-          <img
-            src="images/'e'-binary.webp"
-            class="binary-img"
-            alt="'E' Binary"
-          />
-          <div class="img-caption">
-            <p>'E' Binary</p>
-            <p>Source: Aayush Sood</p>
-          </div>
-          <p>
-            Adding the 1's values (64 + 4 + 1) together produces 69, with our
-            final number corresponding with an uppercase 'E'. This is our fourth
-            and final letter.
-          </p>
-        </div>
-        <div class="paragraph">
-          <div class="button-container">
-            <h1>
-              <button id="revealBtn">Click to Reveal 🎉</button>
-            </h1>
-            <h1 class="code" id="code">CODE</h1>
-          </div>
-          <p>
-            Piecing the letters together forms the word 'CODE'. This
-            demonstrates how words can be represented in binary, allowing your
-            computer to understand which letters to input when you're typing.
-          </p>
-        </div>
-        <div class="paragraph info team" id="info">
-          <h1>Meet the Team!</h1>
-
-          <p><strong>President:</strong> Aayush Sood</p>
-          <p><strong>Vice President:</strong> Jaxson Hynes</p>
-          <p><strong>Communications Executive:</strong> Yahya Amer</p>
-          <p><strong>Logistics Executive:</strong> Seth Farris</p>
-          <p><strong>Secretary:</strong> Din Paunescu</p>
-          <p>
-            <strong>Mentees:</strong> Noah Windover, Yarden Vissman, Krtin Rathi
-          </p>
-        </div>
-        <div class="paragraph footer">
+      </div>
+      <div class="footer">
+        <div class="content">
           <p>
             &copy; 2024 - Present Bay View High School Tech Club. All Rights
             Reserved.
           </p>
-          <a
-            href="https://linktr.ee/bvhstechclub"
-            target="_blank"
-            title="BVHS Tech Club Instagram"
-          >
-            <img
-              class="social-media"
-              src="images/linktree.svg"
-              alt="Linktree"
-            />
-          </a>
         </div>
       </div>
     </div>
     <script>
-      const revealBtn = document.getElementById("revealBtn");
-      const codeText = document.getElementById("code");
+      const fadeElements = document.querySelectorAll(".fade-in");
 
-      revealBtn.addEventListener("click", () => {
-        let canvas = document.createElement("canvas");
-        canvas.width = 600;
-        canvas.height = 600;
-        let container = document.getElementsByClassName("button-container")[0];
-        container.appendChild(canvas);
-
-        let confettiButton = confetti.create(canvas);
-        confettiButton({
-          particleCount: 200,
-          spread: 300,
-          startVelocity: 15,
-          scalar: 0.9,
-          ticks: 90,
-        }).then(() => container.removeChild(canvas));
-
-        revealBtn.style.display = "none";
-        codeText.style.display = "block";
+      window.addEventListener("scroll", () => {
+        fadeElements.forEach((el) => {
+          const rect = el.getBoundingClientRect();
+          if (rect.top < window.innerHeight - 100) {
+            el.classList.add("visible");
+          }
+        });
       });
 
-      VANTA.BIRDS({
-        el: "#vantabg",
-        backgroundColor: 0x7192f,
-        color1: 0xff0000,
-        color2: 0xd1ff,
-        birdSize: 1.0,
-        quantity: 1.0,
+      if (window.matchMedia("(hover: none)").matches) {
+        const cards = document.querySelectorAll(".photo");
+
+        cards.forEach((card) => {
+          card.addEventListener("click", () => {
+            const overlay = card.querySelector(".overlay");
+            overlay.classList.toggle("visible");
+          });
+        });
+      }
+
+      const faqButtons = document.querySelectorAll(".faq-question");
+
+      faqButtons.forEach((btn) => {
+        btn.addEventListener("click", () => {
+          const answer = btn.nextElementSibling;
+
+          if (answer.style.maxHeight) {
+            answer.style.maxHeight = null;
+          } else {
+            answer.style.maxHeight = answer.scrollHeight + "px";
+          }
+        });
+      });
+
+      VANTA.CELLS({
+        el: ".welcome",
+        mouseControls: true,
+        touchControls: true,
+        gyroControls: false,
+        minHeight: 200.0,
+        minWidth: 200.0,
         scale: 1.0,
-        speedLimit: 2.0,
-        scaleMobile: 1.0,
-        separation: 100.0,
+        color1: 0x510d15,
+        color2: 0x841522,
+        size: 1.0,
+        speed: 1.0,
       });
     </script>
   </body>
