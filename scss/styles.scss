@@ -329,12 +329,11 @@ h1 {
     flex-direction: column;
     width: 100%;
     text-align: justify;
-    border-bottom: 1px solid #510d15;
     padding: 20px 0 20px 0;
 
     .content {
       flex-direction: column;
-      padding: 20px;
+      padding: 20px 0 20px 0;
     }
   }
 
@@ -360,7 +359,7 @@ h1 {
     }
 
     .text {
-      padding: 100px 20px 100px 20px;
+      padding: 100px 0 100px 0;
       width: 90%;
     }
 
@@ -373,7 +372,7 @@ h1 {
 @media (min-width: 1100px) {
   .welcome {
     .text {
-      padding: 20px;
+      padding: 20px 20px 20px 0;
     }
   }
 }
