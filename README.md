@@ -4,7 +4,7 @@
 
 ## Inspiration
 
-As the club president, I wanted to create more than just another school webpage. This site is a hub for everything Tech Club, from who we are to the challenges we pose and the creativity we celebrate. It's a space where students can explore, learn, and get inspired.
+As the President of the Bay View High School Tech Club, I wanted to create more than just another school webpage. This site is a hub for everything Tech Club, from who we are to the challenges we pose and the creativity we celebrate. It's a space where students can explore, learn, and get inspired.
 
 ## Challenges
 
