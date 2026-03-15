@@ -117,6 +117,12 @@
               <br />
               <i>Meetings during Wednesday lunch @ Room 1117 </i>
             </div>
+            <a
+              href="https://classroom.google.com/c/NjY5ODY2MDY1MDQ5?cjc=lljme5c"
+              target="_blank"
+              class="cta-button"
+              >Join Us <span class="arrow">→</span></a
+            >
           </div>
           <div class="image">
             <img
@@ -248,57 +254,52 @@
       <div class="paragraph">
         <div class="content">
           <h1>Executive Team</h1>
-          <div class="info fade-in">
-            <p>
-              <strong>President:</strong> Aayush Sood (<a
-                href="mailto:sa825051@gnspes.ca"
-                >sa825051@gnspes.ca</a
-              >)
-            </p>
-            <p>
-              <strong>Vice President:</strong> Jaxson Hynes (<a
-                href="mailto:hjm818668@gnspes.ca"
-                >hjm818668@gnspes.ca</a
-              >)
-            </p>
-            <p>
-              <strong>Communications Executive:</strong> Yahya Amer (<a
-                href="mailto:aym586488@gnspes.ca"
-                >aym586488@gnspes.ca</a
-              >)
-            </p>
-            <p>
-              <strong>Logistics Executive:</strong> Seth Farris (<a
-                href="mailto:fsd817108@gnspes.ca"
-                >fsd817108@gnspes.ca</a
-              >)
-            </p>
-            <p>
-              <strong>Event Coordinator:</strong> Avery Lloyd (<a
-                href="mailto:lrb833352@gnspes.ca"
-                >lrb833352@gnspes.ca</a
-              >)
-            </p>
-            <p>
-              <strong>Secretary:</strong> Din Paunescu (<a
-                href="mailto:pd049529@gnspes.ca"
-                >pd049529@gnspes.ca</a
-              >)
-            </p>
-            <p>
-              <strong>Director of Production Technology:</strong>
-              Noah Windover (<a href="mailto:wnj958597@gnspes.ca"
-                >wnj958597@gnspes.ca</a
-              >)
-            </p>
-            <p>
-              <strong>Mentees:</strong> Yarden Vissman (<a
-                href="mailto:vy989865@gnspes.ca"
-                >vy989865@gnspes.ca</a
-              >), Krtin Rathi (<a href="mailto:rk655788@gnspes.ca"
-                >rk655788@gnspes.ca</a
-              >)
-            </p>
+          <div class="team-grid fade-in">
+            <div class="team-card featured">
+              <span class="role-badge">President</span>
+              <h3>Aayush Sood</h3>
+              <a href="mailto:sa825051@gnspes.ca">sa825051@gnspes.ca</a>
+            </div>
+            <div class="team-card featured">
+              <span class="role-badge">Vice President</span>
+              <h3>Jaxson Hynes</h3>
+              <a href="mailto:hjm818668@gnspes.ca">hjm818668@gnspes.ca</a>
+            </div>
+            <div class="team-card">
+              <span class="role-badge">Communications</span>
+              <h3>Yahya Amer</h3>
+              <a href="mailto:aym586488@gnspes.ca">aym586488@gnspes.ca</a>
+            </div>
+            <div class="team-card">
+              <span class="role-badge">Logistics</span>
+              <h3>Seth Farris</h3>
+              <a href="mailto:fsd817108@gnspes.ca">fsd817108@gnspes.ca</a>
+            </div>
+            <div class="team-card">
+              <span class="role-badge">Events</span>
+              <h3>Avery Lloyd</h3>
+              <a href="mailto:lrb833352@gnspes.ca">lrb833352@gnspes.ca</a>
+            </div>
+            <div class="team-card">
+              <span class="role-badge">Secretary</span>
+              <h3>Din Paunescu</h3>
+              <a href="mailto:pd049529@gnspes.ca">pd049529@gnspes.ca</a>
+            </div>
+            <div class="team-card">
+              <span class="role-badge">Production Tech</span>
+              <h3>Noah Windover</h3>
+              <a href="mailto:wnj958597@gnspes.ca">wnj958597@gnspes.ca</a>
+            </div>
+            <div class="team-card">
+              <span class="role-badge">Mentee</span>
+              <h3>Yarden Vissman</h3>
+              <a href="mailto:vy989865@gnspes.ca">vy989865@gnspes.ca</a>
+            </div>
+            <div class="team-card">
+              <span class="role-badge">Mentee</span>
+              <h3>Krtin Rathi</h3>
+              <a href="mailto:rk655788@gnspes.ca">rk655788@gnspes.ca</a>
+            </div>
           </div>
         </div>
       </div>
@@ -452,6 +453,7 @@
       faqButtons.forEach((btn) => {
         btn.addEventListener("click", () => {
           const answer = btn.nextElementSibling;
+          btn.classList.toggle("active");
 
           if (answer.style.maxHeight) {
             answer.style.maxHeight = null;
